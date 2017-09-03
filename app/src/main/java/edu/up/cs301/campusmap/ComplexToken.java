@@ -46,7 +46,7 @@ public class ComplexToken extends SimpleMapToken {
 
 
         canvas.drawCircle(left, top + 18, 18, paint);
-        canvas.drawCircle(left + 18, top -18 , 18, paint);
+        canvas.drawCircle(left + 18, top , 18, paint);
         canvas.restore();
     }//drawOn
 
