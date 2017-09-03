@@ -30,6 +30,8 @@ public class SquareToken extends SimpleMapToken {
         paint = new Paint(); // paint object
         paint.setARGB(255, r,g,b); //random color
     }
+
+    @Override
     public void drawOn(Canvas canvas) {
         // paint the square on the canvas
         canvas.drawRect(left, top, diameter + left, diameter + top, paint);

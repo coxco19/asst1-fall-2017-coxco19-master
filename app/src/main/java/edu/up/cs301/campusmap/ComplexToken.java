@@ -34,6 +34,7 @@ public class ComplexToken extends SimpleMapToken {
         paint.setARGB(255, r, g, b); //random color
     }
 
+    @Override
     public void drawOn(Canvas canvas) {
 
         //Save and rotate canvas
