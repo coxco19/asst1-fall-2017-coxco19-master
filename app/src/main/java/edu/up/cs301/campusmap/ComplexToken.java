@@ -35,19 +35,17 @@ public class ComplexToken extends SimpleMapToken {
     }
 
     public void drawOn(Canvas canvas) {
-        // paint the dot on the canvas
+
         //Save and rotate canvas
         canvas.save();
         canvas.rotate(45, left, top);
 
+        //Drawing a heart
         canvas.drawRect(left, top, diameter + left, diameter + top, paint);
-
-        //restore canvas
-
-
         canvas.drawCircle(left, top + 18, 18, paint);
         canvas.drawCircle(left + 18, top , 18, paint);
-        canvas.restore();
+
+        canvas.restore(); //restore canvas
     }//drawOn
 
 }

@@ -5,10 +5,10 @@ package edu.up.cs301.campusmap;
  */
 
 
-        import android.graphics.Canvas;
-        import android.graphics.Color;
-        import android.graphics.Paint;
-        import java.util.Random;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import java.util.Random;
 
 public class SquareToken extends SimpleMapToken {
     protected float left; // my x coordinate
@@ -32,7 +32,7 @@ public class SquareToken extends SimpleMapToken {
         paint.setARGB(255, r,g,b); //random color
     }
     public void drawOn(Canvas canvas) {
-        // paint the dot on the canvas
+        // paint the square on the canvas
         canvas.drawRect(left, top, diameter + left, diameter + top, paint);
     }//drawOn
 
